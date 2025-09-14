@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HeeCharm Store</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        crossorigin="anonymous">
+  <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" crossorigin="anonymous"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background: #faedcd; /* cream */
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* navbar */
+    .navbar {
+      background: #fff1f2; /* putih lembut */
+      border-bottom: 4px solid #edbabc;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .navbar-brand {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #8b5e3c; /* coklat */
+    }
+    .navbar a, .navbar button {
+      color: #313857 !important;
+      font-weight: 600;
+    }
+
+    /* search box */
+    .form-control {
+      border: 2px solid #598099;
+      border-radius: 20px;
+    }
+    .btn-outline-light {
+      background: linear-gradient(90deg, #edbabc, #bb7b85);
+      color: #fff1f2 !important;
+      border: none;
+      border-radius: 20px;
+      font-weight: 600;
+    }
+    .btn-outline-light:hover {
+      background: linear-gradient(90deg, #bb7b85, #edbabc);
+    }
+
+    /* card */
+    .card-img-top {
+      height: 220px; /* tinggi seragam */
+      object-fit: cover;
+    }
+    .card {
+      background: #fff1f2;
+      border: 2px solid #edbabc;
+      border-radius: 15px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      margin-bottom: 20px;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 18px rgba(187, 123, 133, 0.3);
+    }
+    .card-title {
+      font-family: 'Playfair Display', serif;
+      font-weight: 600;
+      color: #8b5e3c; /* judul produk coklat */
+    }
+    .card-text {
+      font-family: 'Poppins', sans-serif;
+      color: #313857;
+    }
+
+    /* tombol */
+    .btn-primary {
+      background: #598099;
+      border: none;
+      color: #fff1f2;
+      font-weight: 600;
+      border-radius: 20px;
+      transition: 0.3s ease;
+    }
+    .btn-primary:hover {
+      background: #8b5e3c; /* hover coklat */
+      transform: scale(1.05);
+    }
+
+    /* garis pemisah */
+    .section-divider {
+      height: 3px;
+      background: linear-gradient(to right, #edbabc, #598099);
+      margin: 30px 0;
+      border-radius: 50px;
+    }
+
+    /* footer */
+    footer {
+      background: #8b5e3c; /* coklat */
+      color: #fff1f2;
+      border-top: 4px solid #bb7b85;
+      border-radius: 10px 10px 0 0;
+      padding: 20px;
+      text-align: center;
+      margin-top: 40px;
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-light">
+      <a class="navbar-brand">HeeCharm Store</a>
+      <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+      </form>
+      <button class="btn btn-primary"><i class="fas fa-shopping-cart"></i>(0)</button>
+    </nav>
+
+    <!-- Divider -->
+    <div class="section-divider"></div>
+
+    <!-- Produk -->
+    <div class="row mt-3">
+
+      <div class="col-6 col-md-4 col-lg-3 mt-2">
+        <div class="card">
+          <img src="IMG/jualgelangcincin.jpg" class="card-img-top" alt="Accessories">
+          <div class="card-body">
+            <h5 class="card-title">Accessories</h5>
+            <p class="card-text">Satu set Gelang dan Cincin</p>
+            <p class="card-text">Rp 60,000.00</p>
+            <a href="#" class="btn btn-primary">Add To Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3 mt-2">
+        <div class="card">
+          <img src="IMG/jualheadphone.jpg" class="card-img-top" alt="Headphone">
+          <div class="card-body">
+            <h5 class="card-title">Headphone</h5>
+            <p class="card-text">Suara jernih, Hati pun bening</p>
+            <p class="card-text">Rp 300,000.00</p>
+            <a href="#" class="btn btn-primary">Add To Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3 mt-2">
+        <div class="card">
+          <img src="IMG/jualpiercing.jpg" class="card-img-top" alt="Piercing">
+          <div class="card-body">
+            <h5 class="card-title">Piercing</h5>
+            <p class="card-text">Mini cute piercing</p>
+            <p class="card-text">Rp 50,000.00</p>
+            <a href="#" class="btn btn-primary">Add To Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3 mt-2">
+        <div class="card">
+          <img src="IMG/jualkalung.jpg" class="card-img-top" alt="Kalung">
+          <div class="card-body">
+            <h5 class="card-title">Accessories</h5>
+            <p class="card-text">Kalung keren untuk style</p>
+            <p class="card-text">Rp 150,000.00</p>
+            <a href="#" class="btn btn-primary">Add To Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3 mt-2">
+        <div class="card">
+          <img src="IMG/jualjam.jpg" class="card-img-top" alt="Jam">
+          <div class="card-body">
+            <h5 class="card-title">Jam Tangan</h5>
+            <p class="card-text">Jam tangan elegan</p>
+            <p class="card-text">Rp 200,000.00</p>
+            <a href="#" class="btn btn-primary">Add To Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3 mt-2">
+        <div class="card">
+          <img src="IMG/kacamata1.jpg" class="card-img-top" alt="Kacamata">
+          <div class="card-body">
+            <h5 class="card-title">Kacamata</h5>
+            <p class="card-text">Keren buat gaya</p>
+            <p class="card-text">Rp 120,000.00</p>
+            <a href="#" class="btn btn-primary">Add To Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3 mt-2">
+        <div class="card">
+          <img src="IMG/kacamata2.jpg" class="card-img-top" alt="Kacamata 2">
+          <div class="card-body">
+            <h5 class="card-title">Kacamata</h5>
+            <p class="card-text">Trendy & stylish</p>
+            <p class="card-text">Rp 130,000.00</p>
+            <a href="#" class="btn btn-primary">Add To Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3 mt-2">
+        <div class="card">
+          <img src="IMG/settopihoodie.jpg" class="card-img-top" alt="Set Topi Hoodie">
+          <div class="card-body">
+            <h5 class="card-title">Set Topi Hoodie</h5>
+            <p class="card-text">Style casual kekinian</p>
+            <p class="card-text">Rp 180,000.00</p>
+            <a href="#" class="btn btn-primary">Add To Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3 mt-2">
+        <div class="card">
+          <img src="IMG/jualkalung (2).jpg" class="card-img-top" alt="Kalung">
+          <div class="card-body">
+            <h5 class="card-title">Accessories</h5>
+            <p class="card-text">Kalung keren untuk style</p>
+            <p class="card-text">Rp 150,000.00</p>
+            <a href="#" class="btn btn-primary">Add To Cart</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 HeeCharm Store | All Rights Reserved</p>
+  </footer>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
